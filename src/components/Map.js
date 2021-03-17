@@ -32,9 +32,7 @@ export default function Map ({ searchFilterBy, search }) {
       }
       {
         circleMap.map(({ title, cx, cy, r }) => (
-          <div key={title}>
-            <circle className="st0" cx={cx} cy={cy} r={r} onClick={() => searchFilterBy({location: title, query: true})}></circle>
-          </div>
+          <circle key={title} title={title} className="st0" cx={cx} cy={cy} r={r} onClick={() => console.log(cx, cy)}></circle>
         ))
       }
     </svg>
