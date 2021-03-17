@@ -1,0 +1,57 @@
+.zs_map_of_portugal {
+  path {
+    pointer-events: all;
+    fill: #084b83;
+    stroke:black;
+    stroke-width: 0.2;
+    pointer-events:all;
+    cursor: pointer;
+    transition: 0.7s;
+     -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -o-transition: 0.7s;
+  }
+
+  g {
+    transition: 0.7s;
+   -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -o-transition: 0.7s;
+    &:hover {
+      opacity: 1!important;
+    }
+
+    &:hover path {
+      fill: #70d6ff;
+    }
+  }
+
+  circle {
+    cursor: pointer;
+    stroke-width: 1px;
+    stroke: black;
+    opacity: 1;
+    fill: #fafafa;
+    transition: 0.7s;
+     -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -o-transition: 0.7s;
+    fill: #fff;
+    
+    &:hover {
+      fill: #ef6060;
+    }
+  }
+
+  rect {
+    stroke: #000;
+    stroke-dasharray: 2;
+    stroke-width: 0.5px;
+  }
+}
+
+.active {
+  path {
+    fill: #70d6ff;
+  }
+}
