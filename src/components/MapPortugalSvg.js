@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { circleMap, pathMap } from '../helpers/map';
 import '../assets/scss/Map.scss';
 
-export default function MapPortugalSvg () {
+export default function MapPortugalSvg ({ fill = '#FFF'}) {
   const [active, setActive] = useState('');
 
   return(
@@ -21,7 +21,7 @@ export default function MapPortugalSvg () {
                 )
               }
               <g>
-                { path.map(({ d }) => <path className="st0" key={d} d={d} />) }
+                { path.map(({ d }) => <path className="st0" fill={fill} key={d} d={d} />) }
               </g>
             </g>
           ))
