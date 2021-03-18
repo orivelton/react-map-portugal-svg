@@ -1,6 +1,6 @@
 {
   "name": "react-map-portugal-svg",
-  "version": "0.1.0-beta.2",
+  "version": "0.1.0-beta.3",
   "author": "Orivelton César - https://github.com/orivelton",
   "license": "MIT",
   "repository": {
@@ -10,6 +10,10 @@
   "bugs": {
     "url": "https://github.com/orivelton/react-map-portugal-svg/issues"
   },
+  "source": "src/index.js",
+  "main": "build/index.js",
+  "module": "build/index.m.js",
+  "unpkg": "build/index.umd.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
