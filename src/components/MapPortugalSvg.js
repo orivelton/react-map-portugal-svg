@@ -11,6 +11,7 @@ export default function MapPortugalSvg () {
         {
           pathMap.map(({ title, path }) => (
             <g key={title} onClick={() => (setActive(title))} className={active === title ? 'active' : ''}>
+              <title>{title}</title>
               {
                 title === 'Azores' && (
                   <>
@@ -19,7 +20,7 @@ export default function MapPortugalSvg () {
                   </>
                 )
               }
-              <g title={title} data-tip={title}>
+              <g>
                 { path.map(({ d }) => <path className="st0" key={d} d={d} />) }
               </g>
             </g>
@@ -27,7 +28,9 @@ export default function MapPortugalSvg () {
         }
         {
           circleMap.map(({ title, cx, cy, r }) => (
-            <circle key={title} className="st0" cx={cx} cy={cy} r={r} />
+            <circle key={title} className="st0" cx={cx} cy={cy} r={r}>
+              <title>{title}</title>
+            </circle>
           ))
         }
       </svg>
