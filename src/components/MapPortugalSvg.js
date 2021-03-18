@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import ReactTooltip from 'react-tooltip';
-
-
 import { circleMap, pathMap } from '../helpers/map';
 import '../assets/scss/Map.scss';
 
@@ -30,11 +27,10 @@ export default function MapPortugalSvg () {
         }
         {
           circleMap.map(({ title, cx, cy, r }) => (
-            <circle key={title} title={title} data-tip={title} className="st0" cx={cx} cy={cy} r={r} />
+            <circle key={title} className="st0" cx={cx} cy={cy} r={r} />
           ))
         }
       </svg>
-      <ReactTooltip />
   </>
   )
 }

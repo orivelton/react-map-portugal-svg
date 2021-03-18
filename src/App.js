@@ -1,9 +1,9 @@
-import Map from "./components/Map";
+import MapPortugalSvg from "./components/MapPortugalSvg";
 
 function App() {
   return (
     <div className="App">
-      <Map />
+      <MapPortugalSvg />
     </div>
   );
 }
