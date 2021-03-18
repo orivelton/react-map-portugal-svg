@@ -1,3 +1,8 @@
+:root {
+  --hoverCircle: #ef6060;
+  --hoverColor: black;
+}
+
 .portugal-map path {
 	pointer-events: all;
 	stroke: black;
@@ -22,7 +27,7 @@
 }
 
 .portugal-map g:hover path {
-	fill: #70d6ff;
+	fill: var(--hoverColor)
 }
 
 .portugal-map circle {
@@ -39,7 +44,7 @@
 }
 
 .portugal-map circle:hover {
-	fill: #ef6060;
+	fill: var(--hoverCircle);
 }
 
 .portugal-map rect {
@@ -49,5 +54,5 @@
 }
 
 .active path {
-	fill: #70d6ff;
+	fill: var(--hoverColor);
 }

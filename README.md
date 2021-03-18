@@ -11,14 +11,21 @@ yarn add react-map-portugal-svg
 
 ## Usage
 
+```javascript
+import { MapPortugalSvg } from 'react-map-portugal-svg'
+
+<MapPortugalSvg /> 
+
+```
+
 
 ## Props
 
 | Name                 | Type              | Description | Default |
 | -------------------- | ----------------- | ----------- | ------- |
-| f | (required) string | f | - |
+| fill                 | Color -  string   | Set Default color | #FFF |
 
 
 ## License
 
-MIT © [groinder](https://github.com/groinder)
+MIT © [Orivelton César](https://github.com/orivelton)

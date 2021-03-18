@@ -2,12 +2,22 @@ import React, { useState } from 'react';
 import { circleMap, pathMap } from '../../const/map';
 import '../../Map.css';
 
-export const MapPortugalSvg = ({ fill = '#FFF'}) => {
+export const MapPortugalSvg = ({ fill = '#FFF', width = '100%', hoverCircle = '#ef6060', hoverColor, activeColor }) => {
   const [active, setActive] = useState('');
 
   return(
     <>
-      <svg className="portugal-map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 424 480">
+      <svg 
+        className="portugal-map" 
+        xmlns="http://www.w3.org/2000/svg" 
+        viewBox="0 0 424 480"
+        style={{ 
+          '--hoverCircle': hoverCircle,
+          '--hoverColor': hoverColor,
+          '--activeColor': activeColor,
+          width
+        }}
+      >
         {
           pathMap.map(({ title, path }) => (
             <g key={title} onClick={() => (setActive(title))} className={active === title ? 'active' : ''}>
