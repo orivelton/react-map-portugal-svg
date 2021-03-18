@@ -1,0 +1,53 @@
+.portugal-map path {
+	pointer-events: all;
+	stroke: black;
+	stroke-width: 0.2;
+	pointer-events: all;
+	cursor: pointer;
+	transition: 0.7s;
+	-webkit-transition: 0.7s;
+	-moz-transition: 0.7s;
+	-o-transition: 0.7s;
+}
+
+.portugal-map g {
+	transition: 0.7s;
+	-webkit-transition: 0.7s;
+	-moz-transition: 0.7s;
+	-o-transition: 0.7s;
+}
+
+.portugal-map g:hover {
+	opacity: 1 !important;
+}
+
+.portugal-map g:hover path {
+	fill: #70d6ff;
+}
+
+.portugal-map circle {
+	cursor: pointer;
+	stroke-width: 1px;
+	stroke: black;
+	opacity: 1;
+	fill: #fafafa;
+	transition: 0.7s;
+	-webkit-transition: 0.7s;
+	-moz-transition: 0.7s;
+	-o-transition: 0.7s;
+	fill: #fff;
+}
+
+.portugal-map circle:hover {
+	fill: #ef6060;
+}
+
+.portugal-map rect {
+	stroke: #000;
+	stroke-dasharray: 2;
+	stroke-width: 0.5px;
+}
+
+.active path {
+	fill: #70d6ff;
+}
