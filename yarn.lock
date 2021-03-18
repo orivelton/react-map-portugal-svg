@@ -8303,6 +8303,11 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
+react-map-portugal-svg@^0.1.0-beta.5:
+  version "0.1.0-beta.5"
+  resolved "https://registry.yarnpkg.com/react-map-portugal-svg/-/react-map-portugal-svg-0.1.0-beta.5.tgz#40803ea85631044dd3bf46810a8360e54f684c89"
+  integrity sha512-qUOBg3yyfAUJGmc1brq7qG0p1laoA4OqmNRYAQXjU0i6k+pzL98l+x8T4GDvTNqcC16E+ssiY4lFaVSOIKoIKw==
+
 react-popper-tooltip@^3.1.1:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/react-popper-tooltip/-/react-popper-tooltip-3.1.1.tgz#329569eb7b287008f04fcbddb6370452ad3f9eac"

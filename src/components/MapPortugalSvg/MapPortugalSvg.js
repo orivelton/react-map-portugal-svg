@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { circleMap, pathMap } from '../const/map';
-import '../Map.css';
+import { circleMap, pathMap } from '../../const/map';
+import '../../Map.css';
 
-export default function MapPortugalSvg ({ fill = '#FFF'}) {
+export const MapPortugalSvg = ({ fill = '#FFF'}) => {
   const [active, setActive] = useState('');
 
   return(
