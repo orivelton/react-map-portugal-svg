@@ -1,6 +1,6 @@
 {
   "name": "react-map-portugal-svg",
-  "version": "0.1.0-beta.4",
+  "version": "0.1.0-beta.5",
   "description": "React Map Portugal Svg",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build-lib": "rollup -c"
+    "build-lib": "rollup -c && npm publish"
   },
   "author": "Orivelton César - https://github.com/orivelton",
   "license": "MIT",
