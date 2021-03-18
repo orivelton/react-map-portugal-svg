@@ -17,6 +17,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.3",
+    "react-tooltip": "^4.2.15",
     "sass": "^1.32.8",
     "web-vitals": "^1.0.1"
   },
