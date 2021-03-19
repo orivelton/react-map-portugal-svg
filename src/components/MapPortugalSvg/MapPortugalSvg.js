@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { circleMap, pathMap } from '../../const/map';
 import '../../Map.css';
 
-export const MapPortugalSvg = ({ mapColor = '#FFFFFF', width = '100%', hoverCircle = '#EF6060', selectedColor = '#000000', multipleSelect = false }) => {
+export const MapPortugalSvg = ({ mapColor = '#FFFFFF', width = '100%', hoverCircle = '#EF6060', selectedColor = '#EF6060', multipleSelect = false }) => {
   const [active, setActive] = useState('');
 
   const handleMultipleSelect = ({ currentTarget }) => {
-    multipleSelect ? currentTarget.classList.add('active') : setActive(currentTarget.children[0].textContent);
+    const areaActive = active !== currentTarget.children[0].textContent ? currentTarget.children[0].textContent : '';
+    multipleSelect ? currentTarget.classList.toggle('active') : setActive(areaActive);
   }
 
   return(

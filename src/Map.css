@@ -27,7 +27,8 @@
 }
 
 .portugal-map g:hover path {
-	fill: var(--selectedColor)
+	stroke: var(--selectedColor);
+	stroke-width: 3;
 }
 
 .portugal-map circle {
