@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { circleMap, pathMap } from '../../const/map';
 import '../../Map.css';
 
-export const MapPortugalSvg = ({ fill = '#FFF', width = '100%', hoverCircle = '#ef6060', hoverColor, activeColor }) => {
+export const MapPortugalSvg = ({ mapColor = '#FFFFFF', width = '100%', hoverCircle = '#EF6060', selectedColor = '#000000' }) => {
   const [active, setActive] = useState('');
 
   return(
@@ -13,8 +13,7 @@ export const MapPortugalSvg = ({ fill = '#FFF', width = '100%', hoverCircle = '#
         viewBox="0 0 424 480"
         style={{ 
           '--hoverCircle': hoverCircle,
-          '--hoverColor': hoverColor,
-          '--activeColor': activeColor,
+          '--selectedColor': selectedColor,
           width
         }}
       >
@@ -31,7 +30,7 @@ export const MapPortugalSvg = ({ fill = '#FFF', width = '100%', hoverCircle = '#
                 )
               }
               <g>
-                { path.map(({ d }) => <path className="st0" fill={fill} key={d} d={d} />) }
+                { path.map(({ d }) => <path className="st0" fill={mapColor} key={d} d={d} />) }
               </g>
             </g>
           ))

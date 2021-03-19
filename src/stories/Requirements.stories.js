@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
-import { storiesOf } from '@storybook/react';
 import { MapPortugalSvg } from '../components/MapPortugalSvg';
 
-const stories = storiesOf('App Test', module);
+export default {
+  title: 'MapPortugalSvg',
+  component: MapPortugalSvg,
+  argTypes: {
+    mapColor: { control: 'color'},
+    hoverCircle: { control: 'color'},
+    selectedColor: { control: 'color'},
+    width: { control: 'text'}
+  }
+}
 
-stories.add('App', () => {
+const Template =  args => <MapPortugalSvg {...args} />
 
-  return (
-    <>
-      <MapPortugalSvg  {...{ hoverCircle: 'blue' }}/>
-    </>
-  );
-});
+export const Default = Template.bind({})

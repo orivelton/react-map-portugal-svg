@@ -1,4 +1,4 @@
-# react-map-portugal-svg 🇵🇹        
+# react-map-portugal-svg 🇵🇹       
 
 
 ## Install
@@ -23,7 +23,10 @@ import { MapPortugalSvg } from 'react-map-portugal-svg'
 
 | Name                 | Type              | Description | Default |
 | -------------------- | ----------------- | ----------- | ------- |
-| fill                 | Color -  string   | Set Default color | #FFF |
+| mapColor                 | -   | - | #FFFFFF |
+| hoverCircle                 | -   | - | #EF6060 |
+| selectedColor                 | -   | - | #000000 |
+| width                 | -  | - | 100% |
 
 
 ## License
