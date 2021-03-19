@@ -13,6 +13,6 @@ export default {
   }
 }
 
-const Template =  args => <MapPortugalSvg {...args} />
+const Template =  args => <MapPortugalSvg {...args} />;
 
-export const Default = Template.bind({})
+export const Default = Template.bind({});
