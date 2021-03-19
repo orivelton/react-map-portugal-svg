@@ -8,7 +8,8 @@ export default {
     mapColor: { control: 'color'},
     hoverCircle: { control: 'color'},
     selectedColor: { control: 'color'},
-    width: { control: 'text'}
+    width: { control: 'text'},
+    multipleSelect: { control: 'boolean'}
   }
 }
 

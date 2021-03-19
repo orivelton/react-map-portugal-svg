@@ -27,6 +27,8 @@ import { MapPortugalSvg } from 'react-map-portugal-svg'
 | hoverCircle                 | -   | - | #EF6060 |
 | selectedColor                 | -   | - | #000000 |
 | width                 | -  | - | 100% |
+| multipleSelect                 | -  | - | false |
+
 
 
 ## License
