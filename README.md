@@ -34,6 +34,7 @@ import { MapPortugalSvg } from 'react-map-portugal-svg'
 | width                 | -  | - | 100% |
 | multipleSelect                 | -  | - | false |
 | hoverBorderSize                 | -  | - | 2 |
+| setSelected                 | function (useState)  | - | [] |
 
 
 ## License
