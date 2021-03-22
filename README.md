@@ -33,7 +33,7 @@ import { MapPortugalSvg } from 'react-map-portugal-svg'
 | selectedColor                 | -   | - | #000000 |
 | width                 | -  | - | 100% |
 | multipleSelect                 | -  | - | false |
-
+| hoverBorderSize                 | -  | - | 2 |
 
 
 ## License
