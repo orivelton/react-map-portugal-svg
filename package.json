@@ -1,6 +1,6 @@
 {
   "name": "react-map-portugal-svg",
-  "version": "0.1.0-beta.9",
+  "version": "0.1.0-beta.10",
   "description": "React Map Portugal Svg",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
