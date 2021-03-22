@@ -14,6 +14,15 @@ export default {
   }
 }
 
-const Template =  args => <MapPortugalSvg {...args} />;
+const Template =  args => {
+  const [selected, setSelected] = useState([]);
+
+  return(
+    <>
+      { JSON.stringify(selected) }
+      <MapPortugalSvg {...{...args, setSelected}} />
+    </>
+  )
+};
 
 export const Default = Template.bind({});

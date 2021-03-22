@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import { circleMap, pathMap } from '../../const/map';
 import '../../Map.css';
 
@@ -8,15 +8,19 @@ export const MapPortugalSvg = ({
   hoverCircle = '#EF6060', 
   selectedColor = '#EF6060', 
   multipleSelect = false,
-  hoverBorderSize = 2
+  hoverBorderSize = 2,
+  setSelected
 }) => {
-  const [active, setActive] = useState('');
+  const [active, setActive] = useState([]);
 
   const handleMultipleSelect = ({ currentTarget }) => {
-    const areaActive = active !== currentTarget.children[0].textContent ? currentTarget.children[0].textContent : '';
-    multipleSelect ? currentTarget.classList.toggle('active') : setActive(areaActive);
+    const text = currentTarget.children[0].textContent;
+    const setData = multipleSelect ? [...active, text] : [text]
+    active.includes(text) ? setActive(active.filter(item => item !== text)) : setActive(setData)
   }
-
+  
+  useEffect(() => { setSelected(active) }, [active]);
+  
   return(
     <>
       <svg 
@@ -32,7 +36,7 @@ export const MapPortugalSvg = ({
       >
         {
           pathMap.map(({ title, path }) => (
-            <g key={title} onClick={handleMultipleSelect} className={active === title ? 'active' : ''}>
+            <g key={title} onClick={handleMultipleSelect} className={active.includes(title) ? 'active' : ''}>
               <title>{title}</title>
               {
                 title === 'Azores' && (
