@@ -2,7 +2,14 @@ import React, { useState } from 'react';
 import { circleMap, pathMap } from '../../const/map';
 import '../../Map.css';
 
-export const MapPortugalSvg = ({ mapColor = '#FFFFFF', width = '100%', hoverCircle = '#EF6060', selectedColor = '#EF6060', multipleSelect = false }) => {
+export const MapPortugalSvg = ({ 
+  mapColor = '#FFFFFF', 
+  width = '100%', 
+  hoverCircle = '#EF6060', 
+  selectedColor = '#EF6060', 
+  multipleSelect = false,
+  hoverBorderSize = 2
+}) => {
   const [active, setActive] = useState('');
 
   const handleMultipleSelect = ({ currentTarget }) => {
@@ -19,6 +26,7 @@ export const MapPortugalSvg = ({ mapColor = '#FFFFFF', width = '100%', hoverCirc
         style={{ 
           '--hoverCircle': hoverCircle,
           '--selectedColor': selectedColor,
+          '--hoverBorderSize': hoverBorderSize,
           width
         }}
       >

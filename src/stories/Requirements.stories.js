@@ -9,7 +9,8 @@ export default {
     hoverCircle: { control: 'color'},
     selectedColor: { control: 'color'},
     width: { control: 'text'},
-    multipleSelect: { control: 'boolean'}
+    multipleSelect: { control: 'boolean'},
+    hoverBorderSize: { control: 'number' }
   }
 }
 

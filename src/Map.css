@@ -1,6 +1,7 @@
 :root {
   --hoverCircle: #ef6060;
 	--selectedColor: #000000;
+	--hoverBorderSize: 2
 }
 
 .portugal-map path {
@@ -28,7 +29,7 @@
 
 .portugal-map g:hover path {
 	stroke: var(--selectedColor);
-	stroke-width: 3;
+	stroke-width: var(--hoverBorderSize);
 }
 
 .portugal-map circle {
