@@ -3,7 +3,6 @@ import resolve from '@rollup/plugin-node-resolve';
 import external from 'rollup-plugin-peer-deps-external';
 import { terser } from 'rollup-plugin-terser';
 import postcss from 'rollup-plugin-postcss';
-import copy from 'rollup-plugin-copy';
 
 export default [
   {
@@ -30,15 +29,7 @@ export default [
       }),
       external(),
       resolve(),
-      terser(),
-      copy({
-        targets: [
-          { src: 'package.json', dest: 'dist' },
-          { src: 'LICENSE', dest: 'dist' },
-          { src: 'README.md', dest: 'dist' },
-          { src: 'package.json', dest: 'dist' }
-        ]
-      })
+      terser()
     ]
   }
 ];
