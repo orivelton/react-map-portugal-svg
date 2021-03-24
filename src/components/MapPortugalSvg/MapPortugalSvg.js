@@ -1,5 +1,5 @@
 import React, { useState, useEffect} from 'react';
-import { circleMap, pathMap } from '../../const/map';
+import { circleMap, pathMap } from './svgMap';
 import '../../Map.css';
 
 export const MapPortugalSvg = ({ 
