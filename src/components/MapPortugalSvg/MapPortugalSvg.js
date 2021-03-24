@@ -9,7 +9,7 @@ export const MapPortugalSvg = ({
   selectedColor = '#EF6060', 
   multipleSelect = false,
   hoverBorderSize = 2,
-  setSelected
+  setSelected = null
 }) => {
   const [active, setActive] = useState([]);
 
@@ -19,7 +19,7 @@ export const MapPortugalSvg = ({
     active.includes(text) ? setActive(active.filter(item => item !== text)) : setActive(setData)
   }
   
-  useEffect(() => { setSelected(active) }, [active]);
+  useEffect(() => { setSelected && setSelected(active) }, [active]);
   
   return(
     <>

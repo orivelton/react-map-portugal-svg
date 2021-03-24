@@ -17,9 +17,21 @@ yarn add react-map-portugal-svg
 ## Usage
 
 ```javascript
+import React, { useState } from 'react';
 import { MapPortugalSvg } from 'react-map-portugal-svg'
 
-<MapPortugalSvg /> 
+function App() {
+  const [selected, setSelected] = useState([]);
+
+  return (
+    <>
+      {JSON.stringify(selected)}  {/* 👈 The result */}
+      <MapPortugalSvg setSelected={setSelected}/> 
+    </>
+  );
+}
+
+export default App;
 
 ```
 
