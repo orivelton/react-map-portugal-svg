@@ -52,3 +52,5 @@ export default App;
 ## License
 
 MIT © [Orivelton César](https://github.com/orivelton)
+
+[NPM](https://www.npmjs.com/package/react-map-portugal-svg)
