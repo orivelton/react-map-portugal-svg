@@ -1,5 +1,6 @@
 # react-map-portugal-svg 🇵🇹       
 
+The `react-map-portugal-svg` is a SVG map of Portugal that we can interact with some events.
 
 ## [Demo](https://orivelton.github.io/react-map-portugal-svg/?path=/docs/mapportugalsvg--default)
 
